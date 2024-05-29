@@ -53,12 +53,13 @@ public class view extends javax.swing.JFrame {
         lbResp = new javax.swing.JLabel();
         lbSorte = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(102, 255, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 255, 204));
 
         lbNome.setFont(new java.awt.Font("Andalus", 0, 18)); // NOI18N
         lbNome.setText("NOME:");
@@ -130,6 +131,13 @@ public class view extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\aluno\\Pictures\\akintaro.png")); // NOI18N
 
+        jButton2.setText("SAIR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -154,21 +162,26 @@ public class view extends javax.swing.JFrame {
                                 .addComponent(lbMes)
                                 .addGap(18, 18, 18)
                                 .addComponent(lbAno))
-                            .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(edDia, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(edDia, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(141, 141, 141)
-                                        .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(26, 26, 26)
+                                        .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(67, 67, 67)
                         .addComponent(jLabel3))
-                    .addComponent(lbResp, javax.swing.GroupLayout.PREFERRED_SIZE, 622, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbResp, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 82, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -198,35 +211,36 @@ public class view extends javax.swing.JFrame {
                             .addComponent(lbAno, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(edDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(94, 94, 94)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbResp)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbSorte)
-                .addContainerGap(453, Short.MAX_VALUE))
+                .addGap(552, 552, 552))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(183, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         pack();
@@ -270,46 +284,20 @@ public class view extends javax.swing.JFrame {
          tratamento = "Sra";
          lbResp.setText(tratamento+" "+nome+" nascida no dia "+dia+"/"+mes+"/"+ano+" você é do signo de"+gerarSigno(dia,mes)+". Sua Idade é:"+idade+". seu nº da sorte é: "+sorte);
          lbSorte.setText("Sua porcentagem de sorte é de: "+PorcentagemSorte()+"%");
-        String input=JOptionPane.showInputDialog("Você deseja continuar?(1-SIM ou 2-NÃO)");
-        int numero = Integer.parseInt(input);
-            if(numero==1){
-                edNome.setText(null);
-                 edDia.setText(null);
-                 edMes.setText(null);
-                 edAno.setText(null);
-                lbResp.setText(null);
-                lbSorte.setText(null);
-         }else if(numero==2){
-                dispose();
-         }else{
-             JOptionPane.showMessageDialog(null, "ERROR");
-         }
+        
+            
          
          
      }else{
          tratamento = "Sr.";
          lbResp.setText(tratamento+" "+nome+" nasceu no dia "+dia+"/"+mes+"/"+ano+" você é do signo de"+gerarSigno(dia,mes)+". Sua Idade é:"+idade);
-       lbSorte.setText("Sua porcentagem de sorte é de: "+PorcentagemSorte()+"%");
+         lbSorte.setText("Sua porcentagem de sorte é de: "+PorcentagemSorte()+"%");
          if(ldMasc.isSelected()){
          tratamento = "Sr.";
          lbResp.setText(tratamento+" "+nome+" nascido no dia "+dia+"/"+mes+"/"+ano+" você é do signo de"+gerarSigno(dia,mes)+". Sua Idade é:"+idade+". seu nº da sorte é: "+sorte);
          
-        String input=JOptionPane.showInputDialog("Você deseja continuar?(1-SIM ou 2-NÃO)");
-        int numero = Integer.parseInt(input);
-            if(numero==1){
-                edNome.setText(null);
-                 edDia.setText(null);
-                 edMes.setText(null);
-                 edAno.setText(null);
-                lbResp.setText(null);
-                lbSorte.setText(null);
-
-         }else if(numero==2){
-                dispose();
-         }else{
-             JOptionPane.showMessageDialog(null, "ERROR");
-         }
-         
+        
+       
         }}
      break;
    }
@@ -324,6 +312,11 @@ public class view extends javax.swing.JFrame {
     private void edDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edDiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_edDiaActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dispose();
+
+    }//GEN-LAST:event_jButton2ActionPerformed
 private double PorcentagemSorte() {
         Random random = new Random();
         int[] numeros = new int[10];
@@ -345,7 +338,26 @@ private double PorcentagemSorte() {
         dataNascimento.set(ano, mes - 1, dia); // mês é baseado em zero em Calendar
 
         Calendar dataAtual = Calendar.getInstance();
-
+        if(ano>=1900||ano<=2024){
+            JOptionPane.showMessageDialog(null,"ERROR: TENTE NOVAMENTE");
+            edNome.setText(null);
+            edDia.setText(null);
+            edMes.setText(null);
+            edAno.setText(null);
+            lbResp.setText(null);
+             lbSorte.setText(null);
+        }if(mes>=1 && mes<=12){
+            JOptionPane.showMessageDialog(null,"ERROR: TENTE NOVAMENTE");
+            edNome.setText(null);
+            edDia.setText(null);
+            edMes.setText(null);
+            edAno.setText(null);
+            lbResp.setText(null);
+            lbSorte.setText(null);
+        }
+        
+        
+        
         int idade = dataAtual.get(Calendar.YEAR) - dataNascimento.get(Calendar.YEAR);
 
         if (dataAtual.get(Calendar.MONTH) < dataNascimento.get(Calendar.MONTH)
@@ -396,7 +408,7 @@ private double PorcentagemSorte() {
            dia>=1 && dia<=20 && mes==3){
             signo = "...!!PEIXES!!";
         }else{
-            signo = "ERROR: tente novamente";
+            signo="ERROR: TENTE NOVAMENTE";
         }
        break; }return signo;
     }
@@ -443,6 +455,7 @@ private double PorcentagemSorte() {
     private javax.swing.JTextField edMes;
     private javax.swing.JTextField edNome;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
