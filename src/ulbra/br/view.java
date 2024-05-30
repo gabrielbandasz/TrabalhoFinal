@@ -129,8 +129,6 @@ public class view extends javax.swing.JFrame {
         lbSorte.setFont(new java.awt.Font("Andalus", 0, 18)); // NOI18N
         lbSorte.setText("SORTE:");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\aluno\\Pictures\\akintaro.png")); // NOI18N
-
         jButton2.setText("SAIR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,44 +143,46 @@ public class view extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(96, 96, 96)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbSorte, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(lbNome)
-                            .addComponent(edNome, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbSexo)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(ldMasc)
-                                .addGap(18, 18, 18)
-                                .addComponent(ldFem))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lbDia)
-                                .addGap(18, 18, 18)
-                                .addComponent(lbMes)
-                                .addGap(18, 18, 18)
-                                .addComponent(lbAno))
+                            .addComponent(lbSorte, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbNome)
+                                    .addComponent(edNome, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbSexo)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(edDia, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ldMasc)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(ldFem))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(141, 141, 141)
-                                        .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lbDia)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lbMes)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lbAno))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(26, 26, 26)
-                                        .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(67, 67, 67)
-                        .addComponent(jLabel3))
-                    .addComponent(lbResp, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 82, Short.MAX_VALUE))
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(141, 141, 141)
+                                                .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(edDia, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(27, 27, 27)
+                                                .addComponent(edMes, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(42, 42, 42)
+                                                .addComponent(edAno, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(67, 67, 67)
+                                .addComponent(jLabel3))
+                            .addComponent(lbResp, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 495, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,7 +218,7 @@ public class view extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbResp)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -230,17 +230,13 @@ public class view extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(81, Short.MAX_VALUE))
+                .addGap(0, 95, Short.MAX_VALUE))
         );
 
         pack();
@@ -280,7 +276,9 @@ public class view extends javax.swing.JFrame {
             
    int numero1=0;
    while(numero1==0){
-     if(ldFem.isSelected()){
+      if (ano > 2024 || mes < 1 || mes > 12) {
+            JOptionPane.showMessageDialog(this, "Por favor, insira uma data válida!");
+         }else if(ldFem.isSelected()){
          tratamento = "Sra";
          lbResp.setText(tratamento+" "+nome+" nascida no dia "+dia+"/"+mes+"/"+ano+" você é do signo de"+gerarSigno(dia,mes)+". Sua Idade é:"+idade+". seu nº da sorte é: "+sorte);
          lbSorte.setText("Sua porcentagem de sorte é de: "+PorcentagemSorte()+"%");
@@ -338,24 +336,6 @@ private double PorcentagemSorte() {
         dataNascimento.set(ano, mes - 1, dia); // mês é baseado em zero em Calendar
 
         Calendar dataAtual = Calendar.getInstance();
-        if(ano>=1900||ano<=2024){
-            JOptionPane.showMessageDialog(null,"ERROR: TENTE NOVAMENTE");
-            edNome.setText(null);
-            edDia.setText(null);
-            edMes.setText(null);
-            edAno.setText(null);
-            lbResp.setText(null);
-             lbSorte.setText(null);
-        }if(mes>=1 && mes<=12){
-            JOptionPane.showMessageDialog(null,"ERROR: TENTE NOVAMENTE");
-            edNome.setText(null);
-            edDia.setText(null);
-            edMes.setText(null);
-            edAno.setText(null);
-            lbResp.setText(null);
-            lbSorte.setText(null);
-        }
-        
         
         
         int idade = dataAtual.get(Calendar.YEAR) - dataNascimento.get(Calendar.YEAR);
@@ -365,8 +345,9 @@ private double PorcentagemSorte() {
                 && dataAtual.get(Calendar.DAY_OF_MONTH) < dataNascimento.get(Calendar.DAY_OF_MONTH))) {
             idade--;
         }
-        return idade;
-}
+        return idade;}
+   
+
   public String gerarSigno(int dia, int mes){
         String signo="";
         int numero2=0;
@@ -409,10 +390,10 @@ private double PorcentagemSorte() {
             signo = "...!!PEIXES!!";
         }else{
             signo="ERROR: TENTE NOVAMENTE";
-        }
+       }
        break; }return signo;
     }
-  
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
